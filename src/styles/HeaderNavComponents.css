@@ -1,0 +1,47 @@
+header {
+    margin: auto;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 100%;
+    height: 55px;
+    place-items: center;
+    background-color: cornflowerblue;
+}
+header ul {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+}
+header ul li {
+    margin: 0;
+    float: left;
+    padding: 10px 5px;
+}
+header ul li div {
+    width: 90%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    transition: 400ms;
+}
+header ul li:hover .link {
+    color: black;
+}
+header ul li:hover div {
+    background-color: black;
+    border-radius: 60px;
+}
+.link {
+    padding: 5px 25px;
+    color: white;
+    font-size: 25px;
+    font-family: "Avenir";
+    font-weight: 400;
+    transition: 600ms;
+}
