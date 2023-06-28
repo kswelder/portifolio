@@ -1,6 +1,28 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.home {
+  margin: auto;
+  display: grid;
+  background-image: url("../assets/5134336.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+.home main {
+  margin: auto;
+  display: grid;
+}
+.home main .profile {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 100vh;
+  height: 60vh;
+  border-radius: 10px;
+  background-color: wheat;
+}
+.home main .profile .image-home {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-image: url("../assets/perfil.jpg");
 }
