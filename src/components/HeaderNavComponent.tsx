@@ -5,18 +5,26 @@ function HeaderNavComponent() {
     return (
         <header>
             <nav>
+                <div className="logo">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
                 <ul>
                     <li>
                         <Link to="/" className="link">Home</Link>
-                        <div></div>
                     </li>
                     <li>
                         <Link to="/projetos" className="link">Projetos</Link>
-                        <div></div>
                     </li>
                     <li>
                         <Link to="/sobre" className="link">Sobre</Link>
-                        <div></div>
                     </li>
                 </ul>
             </nav>
