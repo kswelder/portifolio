@@ -1,47 +1,88 @@
 header {
-    margin: auto;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: grid;
+    background-color: white;
     width: 100%;
-    height: 55px;
-    place-items: center;
-    background-color: cornflowerblue;
-}
-header ul {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    list-style-type: none;
-    margin: auto;
-}
-header ul li {
+    height: 9vh;
     margin: 0;
-    float: left;
-    padding: 10px 5px;
+    border-bottom: 0.5px solid rgb(128, 128, 128);
+    overflow: hidden;
 }
-header ul li div {
-    width: 90%;
-    height: 4px;
-    background-color: rgba(0, 0, 0, 0);
+header nav {
     margin: auto;
-    transition: 400ms;
+    display: flex;
+    justify-content: space-around;
 }
-header ul li:hover .link {
-    color: black;
+header nav .logo {
+    width: 9vh;
+    height: 9vh;
 }
-header ul li:hover div {
-    background-color: black;
-    border-radius: 60px;
+header nav ul {
+    list-style: none;
+    width: 100vh;
+    margin-right: 30vh;
+    display: flex;
+}
+@media (max-width: 700px) {
+    header {
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+    header nav {
+        width: 100%;
+        display: grid;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .link {
+        padding: 1.4vh 20vh;
+    }
+    header nav ul li:hover .link{
+        padding: 1.4vh 35vh;
+        background-color: rgba(114, 114, 114, 0.5);
+    }
+}
+
+@media (max-width: 451px) {
+    header {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    header nav {
+        width: 100%;
+        display: grid;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .link {
+        padding: 1.4vh 10vh;
+    }
+    header nav ul li:hover .link{
+        padding: 1.4vh 20vh;
+        background-color: rgba(114, 114, 114, 0.5);
+    }
+}
+header nav ul li {
+    float: left;
+    display: grid;
+}
+header nav ul li:hover .link {
+    color: white;
+    background-color: rgba(114, 114, 114, 0.5);
 }
 .link {
-    padding: 5px 25px;
-    color: white;
+    padding: 1.6vh 8vh;
+    color: black;
     font-size: 25px;
     font-family: "Avenir";
     font-weight: 400;
+    text-decoration: none;
+    text-align: center;
     transition: 600ms;
 }
