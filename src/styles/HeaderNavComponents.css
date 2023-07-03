@@ -23,12 +23,13 @@ header nav ul {
 }
 @media (max-width: 700px) {
     header {
-        width: auto;
+        width: max-device-content;
         height: auto;
         justify-content: center;
     }
     header nav {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         display: grid;
     }
     header nav ul {
@@ -47,7 +48,7 @@ header nav ul {
 
 @media (max-width: 451px) {
     header {
-        width: 100%;
+        width: 450px;
         height: auto;
         justify-content: center;
     }
