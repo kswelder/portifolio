@@ -1,13 +1,7 @@
-import { useState } from 'react'
 import HeaderNavComponent from '../components/HeaderNavComponent'
 import '../styles/App.css'
 
 function App() {
-  const [size, setSize] = useState("")
-  const getSize = () => {
-    setSize(window.outerWidth.toString())
-  }
-
   return (
     <div className='home'>
       <HeaderNavComponent/>
